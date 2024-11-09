@@ -1,0 +1,6 @@
+file = open('newFile.txt', 'w+')
+file.read()
+file.write('Was I able to create a complete new file? Lets check, hope we did it.')
+file.close()
+file1 = open('newFile.txt', 'r')
+print(file1.read())

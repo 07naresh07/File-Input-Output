@@ -1,0 +1,10 @@
+file1 = open('mainFile.txt', 'w+')
+file1.read()
+file1.write('My name is Mr. Cristiano Ronaldo a renowned footballer from Portugal. Currently, I have been involved with Al Nasser, a Saudi Arabian football team.\nPreviously I have played in Manchester United, Real Madrid, Juventus, Sporting Lisbon as a main strkier. Thank you.')
+file1.seek(0)
+file2 = open('copyFile.txt', 'w+')
+file2.write(file1.read())
+file1.close()
+file2.close()
+with open('copyFile.txt', 'r') as file:
+    print(file.read())
